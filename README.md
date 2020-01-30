@@ -1,1 +1,1 @@
-# JSnotes
+# FCC-JavaScript
