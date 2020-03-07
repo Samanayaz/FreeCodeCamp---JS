@@ -70,7 +70,7 @@ numbers.every(function(currentValue) {
   return currentValue < 10;
 });
 
-// check positive by every method 
+// check positive by Some method as it works exactly like every method 
 
 function checkPositive(arr) {
   // Add your code below this line
@@ -80,3 +80,29 @@ function checkPositive(arr) {
   // Add your code above this line
 }
 checkPositive([1, 2, 3, -4, 5]);
+
+// CURRIED FUNCTION // 
+// The arity of a function is the number of arguments it requires. Currying a function means to convert a function of N arity into N functions of arity 1.
+
+// In other words, it restructures a function so it takes one argument, then returns another function that takes the next argument, and so on.
+function unCurried(x, y) {
+  return x + y;
+}
+
+//Curried function
+function curried(x) {
+  return function(y) {
+    return x + y;
+  }
+}
+
+function add(x) {
+  // Add your code below this line
+  return function(y) {
+    return function(z) {
+      return x + y + z;
+    };
+  };
+  // Add your code above this line
+}
+add(10)(20)(30);
