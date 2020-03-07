@@ -58,3 +58,25 @@ const squareList = (arr) => {
 
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
+
+
+
+// Every method //////////
+// The every method works with arrays to check if every element passes a particular test. It returns a Boolean value - true if all values meet the criteria, false if not.
+// or example, the following code would check if every element in the numbers array is less than 10:
+
+var numbers = [1, 5, 8, 0, 10, 11];
+numbers.every(function(currentValue) {
+  return currentValue < 10;
+});
+
+// check positive by every method 
+
+function checkPositive(arr) {
+  // Add your code below this line
+  return arr.every(function(value) {
+    return value > 0;
+  });
+  // Add your code above this line
+}
+checkPositive([1, 2, 3, -4, 5]);
