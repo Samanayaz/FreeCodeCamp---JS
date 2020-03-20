@@ -54,3 +54,4 @@ function telephoneCheck(str) {
   return regex.test(str);
 }
 telephoneCheck("555-555-5555");
+
